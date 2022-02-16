@@ -18,7 +18,7 @@ let
     sha256 = "sha256:08y661799g4xmgy6f37qcm8p290q2w6gdh2rq6iah7rr7qcn9sq5";
   };
 
-  rust-bin = pkgs.rust-bin.nightly."2021-11-29".default.override {
+  rust-bin = pkgs.rust-bin.nightly."2022-01-20".default.override {
     targets = [ "wasm32-unknown-unknown" ];
   };
 
