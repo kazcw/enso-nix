@@ -10,12 +10,12 @@ let
   lib = pkgs.lib;
   buildNodeJs = pkgs.callPackage <nixpkgs/pkgs/development/web/nodejs/nodejs.nix> { python = pkgs.python3; };
 
-  nodejsVersion = "16.13.2";
+  nodejsVersion = "16.14.0";
 
   nodejs = buildNodeJs {
     enableNpm = true;
     version = nodejsVersion;
-    sha256 = "sha256-mLHeH/kqKSuT0rLJO8KphlZkez0MDVYjBp9PgEeotKA=";
+    sha256 = "sha256:08y661799g4xmgy6f37qcm8p290q2w6gdh2rq6iah7rr7qcn9sq5";
   };
 
   rust-bin = pkgs.rust-bin.nightly."2021-11-29".default.override {
